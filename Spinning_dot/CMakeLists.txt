@@ -5,7 +5,7 @@ cmake_minimum_required (VERSION 3.8)
 
 # Add source to this project's executable.
 #$<$<STREQUAL:${WIN32},True>:WIN32>
-add_executable (Spinning_dot WIN32 "App.c" "App.h" "Defines.h" "main.c")
+add_executable (Spinning_dot WIN32 "App.c" "App.h" "Defines.h" "main.c" "Circle.h" "Input.h" "Input.c" "Circle.c")
 
 # TODO: Add tests and install targets if needed.
 target_include_directories(Spinning_dot PRIVATE "${CMAKE_SOURCE_DIR}/${SDL2_INCLUDE}")
