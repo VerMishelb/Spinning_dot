@@ -17,13 +17,13 @@
 *.pch
 
 # Libraries
-*.lib
+# *.lib
 *.a
 *.la
 *.lo
 
 # Shared objects (inc. Windows DLLs)
-*.dll
+# *.dll
 *.so
 *.so.*
 *.dylib
@@ -50,3 +50,10 @@ modules.order
 Module.symvers
 Mkfile.old
 dkms.conf
+
+# SDL2
+# libs/
+.vs/
+libs/SDL2/docs
+libs/SDL2/*.txt
+!libs/SDL2/COPYING.txt

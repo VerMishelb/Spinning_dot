@@ -1,0 +1,6 @@
+# ninja log v5
+1	396	6710809809071598	Spinning_dot/CMakeFiles/Spinning_dot.dir/main.c.obj	33867d3f3f0fb0a0
+7	400	6710809809081562	Spinning_dot/CMakeFiles/Spinning_dot.dir/App.c.obj	e48420702e3ccf5e
+400	1131	6710809815221788	Spinning_dot/Spinning_dot.exe	acf7819081c8d6c
+1	1029	6710813405611789	Spinning_dot/CMakeFiles/Spinning_dot.dir/main.c.obj	33867d3f3f0fb0a0
+1030	2084	6710813410851803	Spinning_dot/Spinning_dot.exe	acf7819081c8d6c
