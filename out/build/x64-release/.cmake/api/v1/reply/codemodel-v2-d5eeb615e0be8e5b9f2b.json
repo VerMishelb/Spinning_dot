@@ -10,7 +10,7 @@
 					[
 						1
 					],
-					"jsonFile" : "directory-.-Debug-d0094a50bb2071803777.json",
+					"jsonFile" : "directory-.-Release-d0094a50bb2071803777.json",
 					"minimumCMakeVersion" : 
 					{
 						"string" : "3.8"
@@ -20,7 +20,7 @@
 				},
 				{
 					"build" : "Spinning_dot",
-					"jsonFile" : "directory-Spinning_dot-Debug-13bbcf939ff3e0a447cd.json",
+					"jsonFile" : "directory-Spinning_dot-Release-13bbcf939ff3e0a447cd.json",
 					"minimumCMakeVersion" : 
 					{
 						"string" : "3.8"
@@ -34,7 +34,7 @@
 					]
 				}
 			],
-			"name" : "Debug",
+			"name" : "Release",
 			"projects" : 
 			[
 				{
@@ -55,7 +55,7 @@
 				{
 					"directoryIndex" : 1,
 					"id" : "Spinning_dot::@357b99423c7eaf150725",
-					"jsonFile" : "target-Spinning_dot-Debug-cabeafe03bf3eabc7f68.json",
+					"jsonFile" : "target-Spinning_dot-Release-0af5d440fb04e32d92f8.json",
 					"name" : "Spinning_dot",
 					"projectIndex" : 0
 				}
@@ -65,7 +65,7 @@
 	"kind" : "codemodel",
 	"paths" : 
 	{
-		"build" : "D:/VSProjects/University projects/Spinning_dot/out/build/x64-debug",
+		"build" : "D:/VSProjects/University projects/Spinning_dot/out/build/x64-release",
 		"source" : "D:/VSProjects/University projects/Spinning_dot"
 	},
 	"version" : 

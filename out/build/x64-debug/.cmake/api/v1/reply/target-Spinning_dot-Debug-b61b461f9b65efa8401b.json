@@ -30,25 +30,25 @@
 			{
 				"command" : 0,
 				"file" : 0,
-				"line" : 8,
+				"line" : 13,
 				"parent" : 0
 			},
 			{
 				"command" : 1,
 				"file" : 0,
-				"line" : 12,
+				"line" : 20,
 				"parent" : 0
 			},
 			{
 				"command" : 2,
 				"file" : 0,
-				"line" : 13,
+				"line" : 24,
 				"parent" : 0
 			},
 			{
 				"command" : 3,
 				"file" : 0,
-				"line" : 11,
+				"line" : 16,
 				"parent" : 0
 			}
 		]
@@ -59,7 +59,7 @@
 			"compileCommandFragments" : 
 			[
 				{
-					"fragment" : "/DWIN32 /D_WINDOWS /W3 /MD /O2 /Ob2 /DNDEBUG"
+					"fragment" : "/DWIN32 /D_WINDOWS /W3 /MDd /Zi /Ob0 /Od /RTC1"
 				},
 				{
 					"fragment" : "-std:c17"
@@ -70,6 +70,10 @@
 				{
 					"backtrace" : 4,
 					"path" : "D:/VSProjects/University projects/Spinning_dot/libs/SDL2/include"
+				},
+				{
+					"backtrace" : 4,
+					"path" : "D:/VSProjects/University projects/Spinning_dot/libs/SDL2_ttf/include"
 				}
 			],
 			"language" : "C",
@@ -96,16 +100,21 @@
 		"commandFragments" : 
 		[
 			{
-				"fragment" : "/DWIN32 /D_WINDOWS /W3 /MD /O2 /Ob2 /DNDEBUG",
+				"fragment" : "/DWIN32 /D_WINDOWS /W3 /MDd /Zi /Ob0 /Od /RTC1",
 				"role" : "flags"
 			},
 			{
-				"fragment" : "/machine:x64 /INCREMENTAL:NO /subsystem:windows",
+				"fragment" : "/machine:x64 /debug /INCREMENTAL /subsystem:console",
 				"role" : "flags"
 			},
 			{
 				"backtrace" : 2,
 				"fragment" : "-LIBPATH:D:\\VSPROJ~1\\UNIVER~2\\SPINNI~1\\libs\\SDL2\\lib\\x64",
+				"role" : "libraryPath"
+			},
+			{
+				"backtrace" : 2,
+				"fragment" : "-LIBPATH:D:\\VSPROJ~1\\UNIVER~2\\SPINNI~1\\libs\\SDL2_ttf\\lib\\x64",
 				"role" : "libraryPath"
 			},
 			{
@@ -116,6 +125,11 @@
 			{
 				"backtrace" : 3,
 				"fragment" : "SDL2main.lib",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 3,
+				"fragment" : "SDL2_ttf.lib",
 				"role" : "libraries"
 			},
 			{

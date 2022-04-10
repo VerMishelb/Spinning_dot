@@ -1,32 +1,39 @@
 #include "Input.h"
 
 void Input_Update(struct App* app) {
-	if (app->event_.type == SDL_KEYDOWN) {
-		switch (app->event_.key.keysym.sym) {
-		case SDLK_LEFT:
-		case SDLK_a:
-			INPUT_SET(app->input, Input_Left);
-			break;
-		case SDLK_RIGHT:
-		case SDLK_d:
-			INPUT_SET(app->input, Input_Right);
-			break;
-		case SDLK_ESCAPE:
-			INPUT_SET(app->input, Input_Quit);
-		}
+	if (app->event_.type == SDL_QUIT) {
+		app->stop = 1;
 	}
-	if (app->event_.type == SDL_KEYUP) {
+	if (app->event_.type == SDL_KEYDOWN || app->event_.type == SDL_KEYUP) {
+		char ispressed = (app->event_.type == SDL_KEYDOWN);
 		switch (app->event_.key.keysym.sym) {
 		case SDLK_LEFT:
 		case SDLK_a:
-			INPUT_UNSET(app->input, Input_Left);
+			app->input.Left = ispressed;
 			break;
 		case SDLK_RIGHT:
 		case SDLK_d:
-			INPUT_UNSET(app->input, Input_Right);
+			app->input.Right = ispressed;
+			break;
+		case SDLK_UP:
+		case SDLK_w:
+			app->input.Up = ispressed;
+			break;
+		case SDLK_DOWN:
+		case SDLK_s:
+			app->input.Down = ispressed;
+			break;
+		case SDLK_MINUS:
+		case SDLK_KP_MINUS:
+			app->input.Minus = ispressed;
+			break;
+		case SDLK_EQUALS:
+		case SDLK_KP_PLUS:
+			app->input.Plus = ispressed;
 			break;
 		case SDLK_ESCAPE:
-			INPUT_UNSET(app->input, Input_Quit);
+			app->input.Escape = ispressed;
+			break;
 		}
 	}
 }

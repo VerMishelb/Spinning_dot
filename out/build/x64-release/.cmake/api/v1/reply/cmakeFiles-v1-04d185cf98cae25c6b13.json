@@ -6,7 +6,7 @@
 		},
 		{
 			"isGenerated" : true,
-			"path" : "out/build/x64-debug/CMakeFiles/3.22.22022201-MSVC_2/CMakeSystem.cmake"
+			"path" : "out/build/x64-release/CMakeFiles/3.22.22022201-MSVC_2/CMakeSystem.cmake"
 		},
 		{
 			"isCMake" : true,
@@ -15,11 +15,11 @@
 		},
 		{
 			"isGenerated" : true,
-			"path" : "out/build/x64-debug/CMakeFiles/3.22.22022201-MSVC_2/CMakeCCompiler.cmake"
+			"path" : "out/build/x64-release/CMakeFiles/3.22.22022201-MSVC_2/CMakeCCompiler.cmake"
 		},
 		{
 			"isGenerated" : true,
-			"path" : "out/build/x64-debug/CMakeFiles/3.22.22022201-MSVC_2/CMakeCXXCompiler.cmake"
+			"path" : "out/build/x64-release/CMakeFiles/3.22.22022201-MSVC_2/CMakeCXXCompiler.cmake"
 		},
 		{
 			"isCMake" : true,
@@ -78,7 +78,7 @@
 		},
 		{
 			"isGenerated" : true,
-			"path" : "out/build/x64-debug/CMakeFiles/3.22.22022201-MSVC_2/CMakeRCCompiler.cmake"
+			"path" : "out/build/x64-release/CMakeFiles/3.22.22022201-MSVC_2/CMakeRCCompiler.cmake"
 		},
 		{
 			"isCMake" : true,
@@ -132,7 +132,7 @@
 	"kind" : "cmakeFiles",
 	"paths" : 
 	{
-		"build" : "D:/VSProjects/University projects/Spinning_dot/out/build/x64-debug",
+		"build" : "D:/VSProjects/University projects/Spinning_dot/out/build/x64-release",
 		"source" : "D:/VSProjects/University projects/Spinning_dot"
 	},
 	"version" : 
