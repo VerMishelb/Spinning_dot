@@ -5,7 +5,7 @@ void Input_Update(struct App* app) {
 		app->stop = 1;
 	}
 	if (app->event_.type == SDL_KEYDOWN || app->event_.type == SDL_KEYUP) {
-		char ispressed = (app->event_.type == SDL_KEYDOWN);
+		char ispressed = (app->event_.type == SDL_KEYDOWN) ? 1 : 0;//Не напрямую, т.к. bool может выдать true не только при единице
 		switch (app->event_.key.keysym.sym) {
 		case SDLK_LEFT:
 		case SDLK_a:
@@ -33,6 +33,15 @@ void Input_Update(struct App* app) {
 			break;
 		case SDLK_ESCAPE:
 			app->input.Escape = ispressed;
+			break;
+		case SDLK_LSHIFT:
+		case SDLK_RSHIFT:
+			app->input.Shift = ispressed;
+			break;
+		case SDLK_r:
+			app->input.Reset = ispressed;
+			break;
+		default:
 			break;
 		}
 	}

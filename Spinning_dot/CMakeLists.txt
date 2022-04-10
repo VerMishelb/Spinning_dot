@@ -5,12 +5,13 @@ cmake_minimum_required (VERSION 3.8)
 
 # Add source to this project's executable.
 #$<$<STREQUAL:${WIN32},True>:WIN32>
-set(EXE_EXTRA "")
-set(SHOW_CONSOLE)
+set(SHOW_CONSOLE False)
 if (WIN32 AND NOT ${SHOW_CONSOLE})
     set(EXE_EXTRA "WIN32")
+else()
+    set(EXE_EXTRA "")
 endif()
-add_executable (Spinning_dot ${EXE_EXTRA} "App.c" "App.h" "Defines.h" "main.c" "Circle.h" "Input.h" "Input.c" "Circle.c")
+add_executable (Spinning_dot ${EXE_EXTRA} "App.c" "App.h" "Defines.h" "main.c" "Circle.h" "Input.h" "Input.c" "Circle.c" "Debug.c")
 
 # TODO: Add tests and install targets if needed.
 target_include_directories(Spinning_dot

@@ -8,5 +8,4 @@ void App_Update(float delta);
 void App_Render(void);
 void App_Destroy(void);
 
-
 #endif

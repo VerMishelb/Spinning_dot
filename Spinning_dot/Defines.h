@@ -15,7 +15,9 @@ typedef struct Input {
 		Down,
 		Plus,
 		Minus,
-		Escape;
+		Escape,
+		Shift,
+		Reset;
 } Input;
 
 struct App {

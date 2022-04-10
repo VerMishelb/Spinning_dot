@@ -14,22 +14,25 @@ void Circle_Init(Circle* c) {
 
 void Circle_Update(float delta, Circle* circle) {
 	if (app.input.Left) {
-		circle->speed -= 0.1f;
+		circle->speed -= 0.1f + (0.5f * app.input.Shift);
 	}
 	if (app.input.Right) {
-		circle->speed += 0.1f;
+		circle->speed += 0.1f + (0.5f * app.input.Shift);
 	}
 	if (app.input.Up) {
-		circle->rotationRadius += 1.f;
+		circle->rotationRadius += 1.f + (3.f * app.input.Shift);
 	}
 	if (app.input.Down) {
-		circle->rotationRadius -= 1.f;
+		circle->rotationRadius -= 1.f + (3.f * app.input.Shift);
 	}
 	if (app.input.Plus) {
-		++circle->size;
+		circle->size += 1 + (3 * app.input.Shift);
 	}
 	if (app.input.Minus) {
-		--circle->size;
+		circle->size -= 1 + (3 * app.input.Shift);
+	}
+	if (app.input.Reset) {
+		Circle_Init(circle);
 	}
 
 	circle->timePassed += delta * circle->speed;
