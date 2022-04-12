@@ -1,7 +1,7 @@
 # ninja log v5
-19	232	6713375906554061	Spinning_dot/CMakeFiles/Spinning_dot.dir/Debug.c.obj	114a210de0589a49
-1	363	6713375907844069	Spinning_dot/CMakeFiles/Spinning_dot.dir/Input.c.obj	db23d3454bccbd17
-10	409	6713375908334083	Spinning_dot/CMakeFiles/Spinning_dot.dir/main.c.obj	fc760ec7226ecaa5
-15	415	6713375908384086	Spinning_dot/CMakeFiles/Spinning_dot.dir/Circle.c.obj	e0b6ce843d13046f
-5	507	6713375909294107	Spinning_dot/CMakeFiles/Spinning_dot.dir/App.c.obj	ed53a227f125db56
-507	1202	6713375915034098	Spinning_dot/Spinning_dot.exe	fb0e5e6eb78e3af2
+1	622	6715060463294135	Spinning_dot/CMakeFiles/Spinning_dot.dir/main.c.obj	fc760ec7226ecaa5
+6	634	6715060463404426	Spinning_dot/CMakeFiles/Spinning_dot.dir/Input.c.obj	db23d3454bccbd17
+15	638	6715060463514154	Spinning_dot/CMakeFiles/Spinning_dot.dir/Circle.c.obj	e0b6ce843d13046f
+20	638	6715060463664141	Spinning_dot/CMakeFiles/Spinning_dot.dir/Debug.c.obj	114a210de0589a49
+10	678	6715060463634134	Spinning_dot/CMakeFiles/Spinning_dot.dir/App.c.obj	ed53a227f125db56
+679	1555	6715060471054125	Spinning_dot/Spinning_dot.exe	fb0e5e6eb78e3af2

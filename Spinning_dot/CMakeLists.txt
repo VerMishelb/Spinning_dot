@@ -1,10 +1,6 @@
-# CMakeList.txt : CMake project for Spinning_dot, include source and define
-# project specific logic here.
-#
 cmake_minimum_required (VERSION 3.8)
 
 # Add source to this project's executable.
-#$<$<STREQUAL:${WIN32},True>:WIN32>
 set(SHOW_CONSOLE False)
 if (WIN32 AND NOT ${SHOW_CONSOLE})
     set(EXE_EXTRA "WIN32")
@@ -13,7 +9,7 @@ else()
 endif()
 add_executable (Spinning_dot ${EXE_EXTRA} "App.c" "App.h" "Defines.h" "main.c" "Circle.h" "Input.h" "Input.c" "Circle.c" "Debug.c")
 
-# TODO: Add tests and install targets if needed.
+# Libs
 target_include_directories(Spinning_dot
     PRIVATE "${CMAKE_SOURCE_DIR}/${SDL2_INCLUDE}"
     PRIVATE "${CMAKE_SOURCE_DIR}/${SDL2_ttf_INCLUDE}"
@@ -40,6 +36,5 @@ add_custom_command(
     COMMAND
         ${CMAKE_COMMAND} -E copy_if_different "${SDL2_ttf_DLL}" $<TARGET_FILE_DIR:Spinning_dot>
     COMMAND
-        ${CMAKE_COMMAND} -E copy_if_different "${CMAKE_SOURCE_DIR}/assets/SourceCodePro-Regular.ttf" $<TARGET_FILE_DIR:Spinning_dot>
-    #COMMENT "Copying SDL2.dll\nfrom: \"${PROJECT_SOURCE_DIR}/SDL2/lib/${EXE_BITS}/SDL2.dll\"\nto: \"$<TARGET_FILE_DIR:Spinning_dot>\""#This did not work??
-    VERBATIM)# <-- out-file
+        ${CMAKE_COMMAND} -E copy_if_different "${ASSETS_NEEDED}" $<TARGET_FILE_DIR:Spinning_dot>
+    VERBATIM)

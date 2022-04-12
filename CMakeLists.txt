@@ -5,7 +5,7 @@ cmake_minimum_required (VERSION 3.8)
 
 project ("Spinning_dot")
 
-#Global (technically) variables
+#Global variables
 set(CMAKE_CXX_STANDARD 20)
 set(CMAKE_C_STANDARD 17)
 if (CMAKE_SIZEOF_VOID_P EQUAL 8)#Check whether the size of any pointer is 8 bytes or not
@@ -25,6 +25,8 @@ set(SDL2_ttf_INCLUDE "libs/SDL2_ttf/include/")
 set(SDL2_ttf_LIB "libs/SDL2_ttf/lib/${EXE_BITS}/")
 set(SDL2_ttf_LIBS SDL2_ttf)
 set(SDL2_ttf_DLL "${CMAKE_SOURCE_DIR}/${SDL2_ttf_LIB}/SDL2_ttf.dll")
+
+set(ASSETS_NEEDED "${CMAKE_SOURCE_DIR}/assets/SourceCodePro-Regular.ttf")
 
 message(SDL2_INCLUDE= ${SDL2_INCLUDE})
 message(SDL2_LIB= ${SDL2_LIB})

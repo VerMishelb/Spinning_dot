@@ -37,7 +37,7 @@ int App_Init(void) {
 	if (!circle) { DBG_MSG("Could not allocate memory"); return -1; }
 
 	Circle_Init(circle);
-	DBG_MSG("Success");
+	DBG_MSG("Init success");
 	return 0;
 }
 
@@ -77,12 +77,14 @@ void App_Render(void) {
 	textRect.h = textSurface->h;
 	SDL_FreeSurface(textSurface);
 	SDL_RenderCopy(app.renderer, textTexture, 0, &textRect);
+	SDL_DestroyTexture(textTexture);
 
 	SDL_RenderPresent(app.renderer);
 }
 
 void App_Destroy(void) {
-	DBG_MSG("Shutting down...");
+	DBG_MSG("Shutting down");
+
 	free(circle);
 
 	TTF_Quit();
