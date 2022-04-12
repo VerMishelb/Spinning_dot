@@ -57,3 +57,5 @@ dkms.conf
 libs/SDL2/docs
 libs/SDL2/*.txt
 !libs/SDL2/COPYING.txt
+Share/
+out/
