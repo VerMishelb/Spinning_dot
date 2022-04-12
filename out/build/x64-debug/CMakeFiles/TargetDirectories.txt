@@ -1,5 +1,0 @@
-D:/VSProjects/University projects/Spinning_dot/out/build/x64-debug/CMakeFiles/edit_cache.dir
-D:/VSProjects/University projects/Spinning_dot/out/build/x64-debug/CMakeFiles/rebuild_cache.dir
-D:/VSProjects/University projects/Spinning_dot/out/build/x64-debug/Spinning_dot/CMakeFiles/Spinning_dot.dir
-D:/VSProjects/University projects/Spinning_dot/out/build/x64-debug/Spinning_dot/CMakeFiles/edit_cache.dir
-D:/VSProjects/University projects/Spinning_dot/out/build/x64-debug/Spinning_dot/CMakeFiles/rebuild_cache.dir
